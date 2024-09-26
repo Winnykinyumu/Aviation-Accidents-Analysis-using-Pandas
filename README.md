@@ -85,6 +85,21 @@ plt.show();
 ```
 ![image](https://github.com/user-attachments/assets/8c198bb9-4ad5-4c4b-af7b-105394f5de3a)
 
+### 3.  Level of fatalities if aircraft is amateur built.
+```python
+#Grouping by 'Amateur.Built' and counting injury severity
+df.groupby('Amateur.Built')['Injury.Severity'].value_counts(normalize = True).unstack('Injury.Severity').plot.bar(stacked = True)
+
+#Formatting
+plt.xticks(rotation = 0)
+plt.title('Fatality rate if built by amateur')
+plt.xlabel('')
+plt.legend(title = "Injury Severity",bbox_to_anchor=(1.4,1),loc='upper right') #The loc specifies the location of the legend in the plot
+plt.show();
+```
+![image](https://github.com/user-attachments/assets/dc76754a-3716-456d-8d74-c718652b59d5)
+
+
 
 
 Tableau dashboard [https://public.tableau.com/app/profile/winny5092/viz/InteractivedashboardonAircraftAnalysis/DashboardonAircraftAnalysis?publish=yes]
