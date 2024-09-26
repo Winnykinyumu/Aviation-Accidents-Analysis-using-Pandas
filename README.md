@@ -129,5 +129,51 @@ plt.show();
 ```
 ![image](https://github.com/user-attachments/assets/942754b0-9df8-4fa1-88b9-f0c0ab061bfb)
 
+### 5. Relating purpose of flight to the number of accidents.
+```python
+#This specific analysis will help to identify safety measures and which aircrafts are most risky in terms of commercial or personal purposes.
+# This will also shed light on safety measures for the different aircrafts.
+# The code will plot fatal injuries against purpose of flight
+injuries=df.groupby('Purpose.of.flight')['Total.Fatal.Injuries'].count().reset_index()
+injuries =injuries.sort_values(by='Total.Fatal.Injuries', ascending=False)
+sns.barplot(data=injuries.head(12),x='Purpose.of.flight',y='Total.Fatal.Injuries')
+plt.title('Level of fatal injuries by purpose of flight')
+plt.xlabel('Purpose of flight')
+plt.ylabel('Total fatal injuries')
+plt.xticks(rotation=80)
+plt.tight_layout()
+plt.show();
+```
+![image](https://github.com/user-attachments/assets/ed3ab239-27b2-4210-b359-a75e943bc604)
+
+### 6.Identifying the most recommendable month for travel.
+```python
+# Group by month name and count the number of accidents
+accidents_per_month = df.groupby('month_name')['Event.Id'].count().reset_index()
+
+# Sort by month order
+month_order = ['January', 'February', 'March', 'April', 'May', 
+               'June', 'July', 'August', 'September', 'October', 
+               'November', 'December']
+accidents_per_month['month_name'] = pd.Categorical(accidents_per_month['month_name'], 
+                                                    categories=month_order, 
+                                                    ordered=True)
+accidents_per_month = accidents_per_month.sort_values('month_name')
+
+# Plotting
+plt.figure(figsize=(12, 6))
+sns.barplot(x='month_name', y='Event.Id', data=accidents_per_month, palette='viridis')
+plt.title('Number of Accidents per Month')
+plt.xlabel('Month')
+plt.ylabel('Number of Accidents')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show();
+```
+![image](https://github.com/user-attachments/assets/7acd48ff-d88e-411a-896e-88ff1d12ce66)
+
+
+
+
 
 Tableau dashboard [https://public.tableau.com/app/profile/winny5092/viz/InteractivedashboardonAircraftAnalysis/DashboardonAircraftAnalysis?publish=yes]
