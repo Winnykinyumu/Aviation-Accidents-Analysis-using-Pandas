@@ -10,7 +10,6 @@
 - [Results and Findings](#results-and-findings)
 - [Recommendations](#recommendations)
 
-
 ## Project Overview
 This analysis aims to identify low-risk aircraft based on accident incidents to guide an organization's decision on purchasing and operating airplanes for both commercial and private enterprises.
 
@@ -208,5 +207,9 @@ This is a screenshot of the overall report dashboard for the analysis done in Ta
 1. It is recommandable that the company considers Griffith-boyd Make as the most reliable and safe aircraft.
 2. In terms of operations, the company can opt for executive/corporate flight business compared to personal flight business.
 3. Lastly, once in operation, the company can limit the number of flights in operation during summer seasons or implement more protective gears during that season to counter the chances of the many accidents that occur during that period.
+
+✈️ 🔆 🛩️
+
+
 
 
