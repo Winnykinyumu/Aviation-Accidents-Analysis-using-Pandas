@@ -21,7 +21,8 @@ The cleaning entailed:
 ## Exploratory Data Analysis
 The analysis involved answering key questions which entailed:
 - Identifying the aircrafts with least accidents.
-- identifying aircrafts with the highest record of uninjured passengers among the aircrafts with least accidents.
+- Identifying aircrafts with the highest record of uninjured passengers among the aircrafts with least accidents.
+- Level of fatalities if aircraft is amateur built.
 - Choosing the low risk aircraft based on model, ameteur built and engine type.
 - Relating purpose of flight to the number of accidents.
 - Identifying the most recommendable month for travel.
@@ -46,6 +47,43 @@ plt.tight_layout()
 plt.show();
 ```
 ![image](https://github.com/user-attachments/assets/6f5cef24-c008-495c-9401-29ed29e3faa5)
+
+### 2. Identifying aircrafts with the highest record of uninjured passengers among the aircrafts with least accidents.
+```python
+# Group by 'Make' and count the number of accidents
+accidents_by_make = df.groupby('Make')['Accident.Number'].count().reset_index(name='Total_Accidents')
+
+# Sort and get the 10 Make manufacturers with the least accidents
+accidents_by_make_least = accidents_by_make.sort_values(by='Total_Accidents', ascending=False)
+least_10_makes = accidents_by_make_least.tail(10)['Make']
+
+# Filter the dataset for those least accident-prone manufacturers
+df_filtered_least = df[df['Make'].isin(least_10_makes)]
+
+# Combine the injury columns
+injuries = ['Total.Fatal.Injuries', 'Total.Serious.Injuries', 'Total.Minor.Injuries', 'Total.Uninjured']
+
+# Group by 'Make' and sum up the injuries for each make
+injuries_by_make_least = df_filtered_least.groupby('Make')[injuries].sum().reset_index()
+
+# Set the 'Make' column as the index for plotting
+injuries_by_make_least.set_index('Make', inplace=True)
+
+# Create a stacked bar plot
+ax = injuries_by_make_least.plot(kind='bar', stacked=True, figsize=(12, 8), colormap='viridis')
+
+# Customize the plot
+plt.title('Injury Levels by Aircraft Make (Least Accidents)')
+plt.xlabel('Aircraft Make')
+plt.ylabel('Number of Injuries')
+plt.xticks(rotation=45)
+plt.legend(title='Type of Injury', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.tight_layout()
+
+# Show the plot
+plt.show();
+```
+![image](https://github.com/user-attachments/assets/8c198bb9-4ad5-4c4b-af7b-105394f5de3a)
 
 
 
