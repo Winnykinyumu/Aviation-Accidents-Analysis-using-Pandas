@@ -1,5 +1,4 @@
 # Aviation Accidents Analysis
-![image](https://github.com/user-attachments/assets/ac39a408-b597-4fb6-be21-4efb7d8f114c)
 ![image](https://github.com/user-attachments/assets/4042c343-b1fc-4d3d-8442-af1bbf2e785f)
 
 
