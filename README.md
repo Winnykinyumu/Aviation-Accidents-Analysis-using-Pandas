@@ -172,6 +172,26 @@ plt.show();
 ```
 ![image](https://github.com/user-attachments/assets/7acd48ff-d88e-411a-896e-88ff1d12ce66)
 
+## Results/Findings
+1. The Flight Makes with least number of flight accidents entailed; Grigg/bowers,Griffith-boyd,Griffin-Thomas,Grieme,Grice,Gribosh,Greth,Gregg and Greg Smith.
+
+2. Out of the 10 flight makes with least incidents, the ones which had higher records of uninjured passengers onboard entailed;Grice,Griffith-boyd and Greth.
+
+3. Out of the 3 makes, Griffith-boyd and Greth presented to have higher records of uninjured passengers compared to Grice.
+
+4. Further, the 2 top Makes with highest number of uninjured passengers were compared based on Ameteur Built, Model and Engine Type. Both Griffith-boyd and Greth presented to have 1     model each and were all Ameteur Built. However, Greth did not have a defined engine type, therefore it was ruled out.
+
+5. With that,Griffith-boyd presented to be the most reliable and less risky aircraft model since it had a defined engine type by the name 'reciprocating'. Having a specific engine type would translate that there is a better track records of safety providing an indication of the overall quality of the flight experience.
+
+6. In terms of overall analysis, executive/corporate flights presented to have fewer accidents. With personal flights leading with the highest accident incidents, executive/corporate appeared 12th in the rank with least incidents.
+
+7. Lastly, summer seasons(June, July, August) presented to have higher incidents of flight accidents compared to winter seasons(November, December, January).
+
+## Recommendations
+1. It is recommandable that the company considers Griffith-boyd Make as the most reliable and safe aircraft.
+2. In terms of operations, the company can opt for executive/corporate flight business compared to personal flight business.
+3. Lastly, once in operation, the company can limit the number of flights in operation during summer seasons or implement more protective gears during that season to counter the chances of the many accidents that occur during that period.
+
 
 
 
