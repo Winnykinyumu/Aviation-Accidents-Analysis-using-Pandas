@@ -1,4 +1,6 @@
 # Aviation Accidents Analysis
+![image](https://github.com/user-attachments/assets/ac39a408-b597-4fb6-be21-4efb7d8f114c)
+
 ## Table of contents
 - [Project Overview](#project-overview)
 - [Data Source](#data-source)
