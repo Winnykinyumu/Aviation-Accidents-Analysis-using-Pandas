@@ -28,6 +28,24 @@ The analysis involved answering key questions which entailed:
 
 ## Data Analysis
 ### 1. Identifying the aircrafts with least accidents.
+```python
+
+#I first group the make column by the count of accident number to represesent the occurence of each accident
+# Confirming Makes with least number of accidents
+accidents_by_make_least = df.groupby('Make')['Accident.Number'].count().reset_index()
+accidents_by_make_least = accidents_by_make_least.sort_values(by='Accident.Number', ascending=False)
+accidents_by_make_least.tail(10)
+#Graph with the least accident cases
+plt.figure(figsize=(12,6))
+sns.barplot(data=accidents_by_make_least.tail(10), x='Make', y='Accident.Number')
+plt.title('Manufacturers with the least Number of Accidents')
+plt.xlabel('Manufacturer Make')
+plt.ylabel('Number of Accidents')
+plt.xticks(rotation=80)
+plt.tight_layout()
+plt.show();
+```
+![image](https://github.com/user-attachments/assets/6f5cef24-c008-495c-9401-29ed29e3faa5)
 
 
 
