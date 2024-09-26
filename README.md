@@ -1,4 +1,4 @@
-# Aviation Accident Analysis
+# Aviation Accidents Analysis
 ## Table of contents
 - [Project Overview](#project-overview)
 - [Data Source](#data-source)
@@ -210,7 +210,3 @@ This is a screenshot of the overall report dashboard for the analysis done in Ta
 3. Lastly, once in operation, the company can limit the number of flights in operation during summer seasons or implement more protective gears during that season to counter the chances of the many accidents that occur during that period.
 
 
-
-
-
-Tableau dashboard [https://public.tableau.com/app/profile/winny5092/viz/InteractivedashboardonAircraftAnalysis/DashboardonAircraftAnalysis?publish=yes]
