@@ -1,8 +1,7 @@
 # Aviation Accident Analysis
 
 ## Project Overview
-This analysis involves determining aircrafts which are of low risk so as to guide an organization in purchasing and operating airplanes for commercial
-and private enterprises.
+This analysis aims to identify low-risk aircraft based on accident incidents to guide an organization's decision on purchasing and operating airplanes for both commercial and private enterprises.
 
 ## Data Source
 The data used for this analysis was from [kaggle dataset](https://www.kaggle.com/datasets/khsamaha/aviation-accident-database-synopses).
