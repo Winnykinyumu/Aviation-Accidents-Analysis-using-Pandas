@@ -172,6 +172,12 @@ plt.show();
 ```
 ![image](https://github.com/user-attachments/assets/7acd48ff-d88e-411a-896e-88ff1d12ce66)
 
+## Dashboard presentation
+This is a screenshot of the overall report dashboard for the analysis done in Tableau. [Here is the link to the Dashboard](https://public.tableau.com/app/profile/winny5092/viz/InteractivedashboardonAircraftAnalysis/DashboardonAircraftAnalysis?publish=yes).
+
+![image](https://github.com/user-attachments/assets/9b1a3f90-e68d-4d9b-8150-999ff64bd2d8)
+
+
 ## Results/Findings
 1. The Flight Makes with least number of flight accidents entailed; Grigg/bowers,Griffith-boyd,Griffin-Thomas,Grieme,Grice,Gribosh,Greth,Gregg and Greg Smith.
 
