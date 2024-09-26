@@ -18,6 +18,17 @@ The cleaning entailed:
 3. Extracting Year, Month and Day into seperate column each from the event date column, and also changing the event date datatype into date.
 4. Harmonizing column names which had repetition and  upper/lower case mix up in naming for elements in each column.
 
+## Exploratory Data Analysis
+The analysis involved answering key questions which entailed:
+- Identifying the aircrafts with least accidents.
+- identifying aircrafts with the highest record of uninjured passengers among the aircrafts with least accidents.
+- Choosing the low risk aircraft based on model, ameteur built and engine type.
+- Relating purpose of flight to the number of accidents.
+- Identifying the most recommendable month for travel.
+
+## Data Analysis
+### 1. Identifying the aircrafts with least accidents.
+
 
 
 Tableau dashboard [https://public.tableau.com/app/profile/winny5092/viz/InteractivedashboardonAircraftAnalysis/DashboardonAircraftAnalysis?publish=yes]
