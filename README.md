@@ -23,7 +23,7 @@ The analysis involved answering key questions which entailed:
 - Identifying the aircrafts with least accidents.
 - Identifying aircrafts with the highest record of uninjured passengers among the aircrafts with least accidents.
 - Level of fatalities if aircraft is amateur built.
-- Choosing the low risk aircraft based on model, ameteur built and engine type.
+- Identifying the low risk aircraft based on model, ameteur built and engine type.
 - Relating purpose of flight to the number of accidents.
 - Identifying the most recommendable month for travel.
 
@@ -99,7 +99,35 @@ plt.show();
 ```
 ![image](https://github.com/user-attachments/assets/dc76754a-3716-456d-8d74-c718652b59d5)
 
+### 4.Identifying the low risk aircraft based on model, ameteur built and engine type.
+```python
+#Plotting engine type and makes with least incident of accidents
+# Group by 'Make' and count the number of accidents
+accidents_by_make = df.groupby('Make')['Accident.Number'].count().reset_index(name='Total_Accidents')
 
+# Sort and get the 10 Make manufacturers with the least accidents
+accidents_by_make_least = accidents_by_make.sort_values(by='Total_Accidents', ascending=False)
+least_10_makes = accidents_by_make_least.tail(10)['Make']
+
+# Filter the dataset for those least accident-prone manufacturers
+df_filtered_least = df[df['Make'].isin(least_10_makes)]
+
+# Group by 'Make' and 'Engine.Type' to count the number of accidents for each combination
+accidents_by_engine_type = df_filtered_least.groupby(['Make', 'Engine.Type'])['Accident.Number'].count().unstack(fill_value=0)
+
+# Plot a bar chart
+ax = accidents_by_engine_type.plot(kind='bar', figsize=(12, 8), colormap='viridis')
+
+# Customize the plot
+plt.title('Accidents by Aircraft Make and Engine Type (Least Accidents)')
+plt.xlabel('Aircraft Make')
+plt.ylabel('Number of Accidents')
+plt.xticks(rotation=45)
+plt.legend(title='Engine Type', bbox_to_anchor=(1.05, 1), loc='upper left')
+plt.tight_layout()
+plt.show();
+```
+![image](https://github.com/user-attachments/assets/942754b0-9df8-4fa1-88b9-f0c0ab061bfb)
 
 
 Tableau dashboard [https://public.tableau.com/app/profile/winny5092/viz/InteractivedashboardonAircraftAnalysis/DashboardonAircraftAnalysis?publish=yes]
