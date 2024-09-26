@@ -1,4 +1,15 @@
 # Aviation Accident Analysis
+## Table of contents
+- [Project Overview](#project-overview)
+- [Data Source](#data-source)
+- [Tools](#tools)
+- [Data cleaning](#data-cleaning)
+- [Exploratory Data Analyis](#exploratory-data-analysis)
+- [Data Analyis](#data-analysis)
+- [Dashboard Presentation](#dashboard-presentation)
+- [Results and Findings](#results-and-findings)
+- [Recommendations](#recommendations)
+
 
 ## Project Overview
 This analysis aims to identify low-risk aircraft based on accident incidents to guide an organization's decision on purchasing and operating airplanes for both commercial and private enterprises.
@@ -10,7 +21,7 @@ The data used for this analysis was from [kaggle dataset](https://www.kaggle.com
 - Python for data cleaning and analyis.
 - Tableau for creating a report dashboard.
 
-## Data cleaning/preparation
+## Data cleaning
 The initial dataset had a shape of 88889, 31 i.e.88889 rows and 31 columns. However, it resulted into 22 columns after cleaning.
 The cleaning entailed:
 1. Dropping columns with relatively high missing values. That is more than 50% missing values of the overall data.
@@ -178,7 +189,7 @@ This is a screenshot of the overall report dashboard for the analysis done in Ta
 ![image](https://github.com/user-attachments/assets/9b1a3f90-e68d-4d9b-8150-999ff64bd2d8)
 
 
-## Results/Findings
+## Results and Findings
 1. The Flight Makes with least number of flight accidents entailed; Grigg/bowers,Griffith-boyd,Griffin-Thomas,Grieme,Grice,Gribosh,Greth,Gregg and Greg Smith.
 
 2. Out of the 10 flight makes with least incidents, the ones which had higher records of uninjured passengers onboard entailed;Grice,Griffith-boyd and Greth.
